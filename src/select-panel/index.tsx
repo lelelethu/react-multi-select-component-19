@@ -43,8 +43,8 @@ const SelectPanel = () => {
     onCreateOption,
   } = useMultiSelect();
 
-  const listRef = useRef<any>();
-  const searchInputRef = useRef<any>();
+  const listRef = useRef<any>(null);
+  const searchInputRef = useRef<any>(null);
   const [searchText, setSearchText] = useState("");
   const [filteredOptions, setFilteredOptions] = useState(options);
   const [searchTextForFilter, setSearchTextForFilter] = useState("");
@@ -174,7 +174,7 @@ const SelectPanel = () => {
     getFilteredOptions().then(setFilteredOptions);
   }, [searchTextForFilter, options]);
 
-  const creationRef: any = useRef();
+  const creationRef: any = useRef(null);
   useKey([KEY.ENTER], handleOnCreateOption, { target: creationRef });
 
   const showCreatable =

@@ -27,7 +27,7 @@ const SelectItem = ({
   onSelectionChanged,
   onClick,
 }: ISelectItemProps) => {
-  const itemRef: any = useRef();
+  const itemRef: any = useRef(null);
 
   const onOptionCheck = (e) => {
     toggleChecked();

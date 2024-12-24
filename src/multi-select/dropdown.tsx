@@ -43,7 +43,7 @@ const Dropdown = () => {
   const [hasFocus, setHasFocus] = useState(false);
   const FinalArrow = ArrowRenderer || Arrow;
 
-  const wrapper: any = useRef();
+  const wrapper: any = useRef(null);
 
   useDidUpdateEffect(() => {
     onMenuToggle && onMenuToggle(expanded);
