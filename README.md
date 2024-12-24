@@ -1,4 +1,5 @@
 # react-multi-select-component
+UPGRADE TO REACT 19
 
 Simple and lightweight multiple selection dropdown component with `checkboxes`, `search` and `select-all`
 
